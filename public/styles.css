@@ -1,0 +1,112 @@
+body {
+  font-family: sans-serif;
+  margin: 0 auto;
+  padding: 25px;
+  max-width: auto;
+  min-width: 400px;
+  text-align: center;
+}
+
+.sidebar {
+  position: fixed;
+  height: auto;
+  width: 200px;
+  top: 0;
+  left: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  z-index: 1;
+  background-color: #abb8be1e;
+}
+
+.sidebar a {
+  text-decoration: none;
+  display: block;
+  color: black;
+  padding: 5px 10px 0px 15px;
+  text-align: left;
+  float: left;
+}
+.sidebar h5 {
+  color: rgb(160, 156, 156);
+  display: block;
+  opacity: 0.8;
+  text-align: left;
+  padding: 0px 10px 5px 15px;
+  clear: left;
+}
+.blockElement:hover {
+  background-color: #ff4500;
+}
+.blockElement:hover a {
+  color: whitesmoke;
+}
+.blockElement:hover h5 {
+  color: whitesmoke;
+}
+.main {
+  margin-left: 220px;
+  margin-top: 10px;
+  padding: 0px 10px;
+  overflow-x: hidden;
+}
+.hblock {
+  display: block;
+  padding: 15px 15px;
+  float: left;
+}
+.hblock img {
+  width: 250px;
+  height: 250px;
+  float: left;
+  padding: 0;
+}
+.hblock h4 {
+  clear: left;
+  text-align: left;
+  float: left;
+  color: rgb(53, 49, 49);
+  padding: 0;
+}
+.hblock h5 {
+  clear: left;
+  text-align: left;
+  color: grey;
+  font-weight: bold;
+}
+.hblock div {
+  float: left;
+}
+.special {
+  width: 80%;
+  margin: auto;
+}
+.special button {
+  display: inline;
+  background-color: green;
+  color: whitesmoke;
+  margin-right: 3px;
+}
+.special h6 {
+  display: inline;
+  margin: 0 2px;
+}
+.special h5 {
+  display: inline;
+  color: grey;
+  font-weight: normal;
+  margin: 0 3px;
+}
+.hblock:hover {
+  border: solid 3.5px rgb(223, 220, 220);
+  box-shadow: #abb8be1e 1.5px;
+}
+.category {
+  display: block;
+  margin: 30px 20px;
+  padding: 15px;
+  width: 80%;
+  height: auto;
+}
