@@ -18,12 +18,13 @@ body {
   overflow-x: hidden;
   overflow-y: hidden;
   z-index: 1;
-  background-color: #abb8be1e;
+  background-color: white;
+  border-bottom: 2px whitesmoke solid;
+  border-right: 2px solid whitesmoke;
 }
 
 .sidebar a {
   text-decoration: none;
-  display: block;
   color: black;
   padding: 5px 10px 0px 15px;
   text-align: left;
@@ -46,67 +47,87 @@ body {
 .blockElement:hover h5 {
   color: whitesmoke;
 }
+.app {
+  display: flex;
+}
 .main {
   margin-left: 220px;
   margin-top: 10px;
-  padding: 0px 10px;
-  overflow-x: hidden;
+  padding: 0px;
+  flex: 1;
+  height: 100vh;
 }
 .hblock {
-  display: block;
-  padding: 15px 15px;
-  float: left;
+  display: flex;
+  padding: 10px;
+  margin: 10px;
+  flex-direction: column;
+  width: 350px;
+  height: auto;
+  border: 2px solid transparent;
+  justify-content: space-evenly;
+  transition-duration: 0.2s;
 }
 .hblock img {
-  width: 250px;
-  height: 250px;
-  float: left;
-  padding: 0;
+  width: 350px;
+  height: 200px;
+  margin-bottom: 3px;
 }
-.hblock h4 {
-  clear: left;
+.hblock h2 {
   text-align: left;
-  float: left;
-  color: rgb(53, 49, 49);
-  padding: 0;
+  margin: 1px;
+  margin-top: 0px;
+  margin-left: 0px;
+  font-size: 15px;
+  color: #3b3b3b;
 }
-.hblock h5 {
-  clear: left;
+.hblock h3 {
   text-align: left;
-  color: grey;
   font-weight: bold;
+  margin: 0px;
+  font-size: 13px;
+  color: rgb(153, 148, 148);
 }
-.hblock div {
-  float: left;
-}
+
 .special {
-  width: 80%;
-  margin: auto;
+  width: 300px;
+  margin: 8px;
+  margin-left: 20px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(153, 148, 148);
 }
 .special button {
-  display: inline;
-  background-color: green;
+  display: flex;
+  background-color: rgb(58, 219, 58);
   color: whitesmoke;
   margin-right: 3px;
 }
-.special h6 {
-  display: inline;
-  margin: 0 2px;
-}
-.special h5 {
-  display: inline;
-  color: grey;
-  font-weight: normal;
+
+.special h4 {
+  font-weight: bold;
   margin: 0 3px;
 }
 .hblock:hover {
-  border: solid 3.5px rgb(223, 220, 220);
-  box-shadow: #abb8be1e 1.5px;
+  border: 2px rgb(206, 197, 197) solid;
+  transform: scale(1.06);
 }
-.category {
-  display: block;
-  margin: 30px 20px;
-  padding: 15px;
-  width: 80%;
-  height: auto;
+
+.category h1 {
+  text-align: left;
+}
+
+.cblock {
+  display: flex;
+  flex-wrap: wrap;
+}
+.more {
+  margin: 20px;
+  align-items: center;
+  border: solid 2px #e46b3f;
+}
+.more h4 {
+  color: #cc5e36;
 }
